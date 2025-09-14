@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MEWKIE</title>
+</head>
+<body>
+    <!-- Paste the integration code from IBM here -->
+    <script>
+      // Example snippet (yours will have your unique keys)
+      window.watsonAssistantChatOptions = {
+        integrationID: "7937d2a8-fe70-4b11-a228-949ff60bfe98",
+        region: "au-syd",
+        serviceInstanceID: "28e3ef50-48be-41fa-b45e-86d0980d7a2b",
+        onLoad: function(instance) { instance.render(); }
+      };
+      setTimeout(function(){
+        const t=document.createElement('script');
+        t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+        document.head.appendChild(t);
+      });
+    </script>
+</body>
+</html>
